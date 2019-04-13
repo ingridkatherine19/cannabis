@@ -1469,7 +1469,7 @@ ul.tabs-nav .tab-nav.active {
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
-.contact-form textarea {
+.contact-form textarea, .contact-form select {
     width: 100%;
     padding: 15px 20px;
     margin-top: 30px;

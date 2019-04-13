@@ -9,6 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -114,46 +115,68 @@
             </div>
         </div>
     </div>
+    <form id="form_contacto">
+        <div class="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Contáctanos</h2>
+                        <p>Para agendar una cita déjanos tus datos así como la consulta medica que quieres resolver, si ya tienes un diagnóstico por favor detállanos también los medicamentos, dieta, actividad física y/o terapia física que estés recibiendo tu familiar o tu. </p>
+                    </div>
+    
+                    <div class="col-12  col-md-4">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" minlength="2" maxlength="30" onkeypress="return soloLetras(event)" required>
+                    </div><!-- col-4 -->
+    
+                    <div class="col-12 col-md-4">
+                        <input type="text" id="email" name="email" placeholder="Email" minlength="6" maxlength="50" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+                    </div><!-- col-4 -->
+    
+                    <div class="col-12 col-md-4">
+                        <input type="text" placeholder="Edad" id="edad" name="edad" minlength="1" maxlength="3" onkeypress="return soloNumeros(event)" required>
+                    </div>
 
-    <div class="contact-form">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Get in Touch</h2>
-                </div>
+                    <div class="col-12  col-md-4">
+                        <input type="text" id="peso" name="peso" placeholder="Peso" required>
+                    </div><!-- col-4 -->
+    
+                    <div class="col-12 col-md-4">
+                        <input type="text" id="talla" name="talla" placeholder="Talla" required>
+                    </div><!-- col-4 -->
 
-                <div class="col-12  col-md-4">
-                    <input type="text" placeholder="Name">
-                </div><!-- col-4 -->
+                    <div class="col-12  col-md-4">
+                        <select name="distrito" id="distrito"  required>
+                            <option value="default">Seleciona un distrito</option>
+                            
+                        </select>
+                    </div><!-- col-4 -->
+                    
+                    <div class="col-12">
+                        <textarea name="diagnostico" id="diagnostico" rows="3" cols="80" placeholder="Diagnóstico"></textarea>
+                    </div>
 
-                <div class="col-12 col-md-4">
-                    <input type="email" placeholder="E-mail">
-                </div><!-- col-6 -->
+                    <div class="col-12">
+                        <textarea name="consulta" id="consulta" rows="3" cols="80" placeholder="Consulta "></textarea>
+                    </div>
+    
+                    <div class="col-12">
+                        <input type="submit" name="" value="Agendar cita" class="button gradient-bg">
+                    </div>
+                </div><!-- row -->
+            </div>
+        </div><!-- contact-form -->
+    </form>
+    
 
-                <div class="col-12 col-md-4">
-                    <input type="text" placeholder="Subject">
-                </div>
-
-                <div class="col-12">
-                    <textarea name="name" rows="12" cols="80" placeholder="Message"></textarea>
-                </div>
-
-                <div class="col-12">
-                    <input type="submit" name="" value="Send Message" class="button gradient-bg">
-                </div>
-            </div><!-- row -->
-        </div>
-    </div><!-- contact-form -->
-
-    <div class="container">
+    <!--<div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="contact-page-map">
                     <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div><!-- map -->
-            </div>
+            <!--</div>
         </div>
-    </div>
+    </div>-->
 
 
 
@@ -163,20 +186,6 @@
 
 
 
-    <div class="subscribe-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <h2>Subscribe to our newsletter</h2>
-
-                    <form>
-                        <input type="email" placeholder="E-mail address">
-                        <input class="button gradient-bg" type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer class="site-footer">
         <div class="footer-widgets">
@@ -233,5 +242,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
     <script type='text/javascript' src='js/jquery.barfiller.js'></script>
     <script type='text/javascript' src='js/custom.js'></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
