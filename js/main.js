@@ -165,10 +165,7 @@ $(document).ready(function () {
                     data: $("#form_contacto").serialize(), 
                     success: function (data) {
                         console.log(data);
-                        $("#msg_error").html("");
-                        document.forms["form_contacto"].reset();
-                        $(':input[type="submit"]').prop('disabled', false);
-                        location.href ="http://blend.work/clientes/tudela/gracias.html";
+                        
                         //alert("Su reserva ha sido enviada correctamente, gracias por su preferencia.");
                     }
                 });
