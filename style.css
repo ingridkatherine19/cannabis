@@ -677,11 +677,11 @@ ul.tabs-nav .tab-nav.active {
     position: relative;
     padding: 32px;
     border-radius: 20px;
-    border: 2px solid #dde4ea;
+    border: 2px solid #a7d129;
 }
 
 .opening-hours {
-    border-color: #18a3eb;
+    border-color: #a7d129;
 }
 
 .opening-hours h2,
@@ -1150,6 +1150,7 @@ ul.tabs-nav .tab-nav.active {
 
 .med-history img {
     max-width: 100%;
+    height: -webkit-fill-available;
 }
 
 .faq-stuff {
